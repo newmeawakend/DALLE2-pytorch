@@ -84,7 +84,7 @@ Each metric can be enabled by setting its configuration. The configuration keys 
 | Option | Required | Default | Description |
 | ------ | -------- | ------- | ----------- |
 | `n_evaluation_samples` | No | `1000` | The number of samples to generate to test the model. |
-| `FID` | No | `None` | Setting to an object enables the [Frechet Inception Distance](https://torchmetrics.readthedocs.io/en/stable/image/frechet_inception_distance.html) metric. 
+| `FID` | No | `None` | Setting to an object enables the [Frechet Inception Distance](https://torchmetrics.readthedocs.io/en/stable/image/frechet_inception_distance.html) metric.
 | `IS` | No | `None` | Setting to an object enables the [Inception Score](https://torchmetrics.readthedocs.io/en/stable/image/inception_score.html) metric.
 | `KID` | No | `None` | Setting to an object enables the [Kernel Inception Distance](https://torchmetrics.readthedocs.io/en/stable/image/kernel_inception_distance.html) metric. |
 | `LPIPS` | No | `None` | Setting to an object enables the [Learned Perceptual Image Patch Similarity](https://torchmetrics.readthedocs.io/en/stable/image/learned_perceptual_image_patch_similarity.html) metric. |
@@ -100,6 +100,7 @@ Selects how the experiment will be tracked.
 | `load` | No | `None` | Checkpoint loading configuration. |
 | `save` | Yes | N/A | Checkpoint/Model saving configuration. |
 Tracking is split up into three sections:
+
 * Log: Where to save run metadata and image output. Options are `console` or `wandb`.
 * Load: Where to load a checkpoint from. Options are `local`, `url`, or `wandb`.
 * Save: Where to save a checkpoint to. Options are `local`, `huggingface`, or `wandb`.
